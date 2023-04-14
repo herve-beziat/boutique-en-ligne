@@ -1,0 +1,260 @@
+*{ 
+    padding:0;
+    margin:0;
+}
+
+/* CSS FOOTER*/
+
+footer{
+    display: flex;
+    height: 300px;
+   
+
+}
+
+.liens{
+    display: flex;
+    height:100%;
+    width:80%;
+    background: linear-gradient(#F5D9EB,#FFFEFB);
+    
+}
+
+.liens a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #D7567C;
+}
+
+.Acceuil{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+.barbep{
+    height: 180px;
+    width: 180px;
+    margin-bottom: 5%;
+}
+
+.Compte{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    align-items: center;
+    
+}
+
+.fraise{
+    height: 150px;
+    width: 150px;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+
+
+.bonbon-contact{
+    height: 230px;
+    width: 230px;
+}
+
+.Apropos{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    align-items: center;
+}
+
+
+.sucette-apropos{
+    height: 150px;
+    width: 150px;
+    margin-top: 4%;
+    margin-bottom: 10%;
+}
+
+.newsletter{
+    display: flex;
+    height: 100%;
+    width:20%;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#f8d9ad,#FFFEFB)
+}
+
+
+
+.p1{
+    font-size: 135%;
+    color: #D7567C;
+    text-align: center ;
+    margin-bottom: 5%;
+}
+
+.p2{
+    font-size:75%;
+    margin-top: 6%;
+    text-align: center ;
+}
+
+
+
+.titre-news{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    
+}
+
+
+
+.img1{
+    display: flex;
+    height: 40px;
+    width: 35px; 
+    margin-left: 2%;
+}
+
+.img2{
+    display: flex;
+    height: 40px;
+    width: 35px; 
+    margin-right: 2%;
+}
+
+#candynews{
+    font-size: 160%;
+    text-align: center;
+}
+
+#newsform input{
+    border-radius: 15px;
+    border:none;
+    height:30px;
+    text-align: center;
+}
+
+#newsform input[type="submit"]{
+    font-size: 0.9rem;
+    background-color: #D7567C;
+    color:white;
+    width:60px;
+}
+
+
+/*CSS HEADER*/
+
+
+ header{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.nav1{
+    display:flex;
+    height: 200px;
+    width:100%;
+}
+
+form{
+    display: flex;
+    width:30%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Logo{
+    display:flex;
+    width: 45%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo{
+    height:200px;
+}
+
+#Profilpic{
+    display: flex;
+    width:15%;
+    height:200px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.profilpic{
+    height:50px;
+}
+
+#Panierpic{
+    display: flex;
+    width:15%;
+    height:200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.panier{
+    height:50px
+}
+
+#searchbox input[type="text"]{
+    height:30px;
+    width: 270px;
+    border-radius:15px;
+    text-align: center;
+}
+
+#searchbox input[type="submit"]{
+    height:35px;
+    width: 50px;
+    border-radius:15px;
+}
+
+.nav2{
+    display: flex;
+    background-color: #D7567C;
+    background-image:url(../boutique/img/fond1.jpg) ;
+    height: 100px;
+    width: 100%;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+} 
+
+#menu-nav{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    
+}
+
+li a{
+    text-decoration: none;
+    font-size: 160%;
+    color: #268Da9;
+    font-weight: 800;
+}
+
+ul{
+    list-style: none;
+}
+
