@@ -172,7 +172,7 @@ footer{
     width:100%;
 }
 
-form{
+#searchbox{
     display: flex;
     width:30%;
     height: 200px;
@@ -232,7 +232,7 @@ form{
 .nav2{
     display: flex;
     background-color: #D7567C;
-    background-image:url(../boutique/img/fond1.jpg) ;
+    background-image:url(./img/fond1.jpg) ;
     height: 100px;
     width: 100%;
     background-size: cover;

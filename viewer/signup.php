@@ -15,6 +15,7 @@ require_once('../controller/connexion.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LINK CSS -->
+    <link rel="stylesheet" href="../assets/style.css">
     <!-- LINK FONT -->
     <!-- LINK JS -->
     <!-- <script defer src="/scripts/connexion.js"></script> -->
@@ -26,8 +27,10 @@ require_once('../controller/connexion.php');
     <!-- TITRE DU DOCUMENT -->
     <title>signup</title>
 </head>
+<?php require_once('../include/header.php') ?>
 <body>
-    <header>
+
+    <div>
         <ul>
             <?php if(empty($_SESSION['login'])) : ?>
                 <li><a href="../index.php"> &larr; RETOUR À L'ACCUEIL</a></li>
@@ -38,7 +41,7 @@ require_once('../controller/connexion.php');
                 <li><a href="../controller/logout.php" id="logout">Déconnexion</a></li>
             <?php endif; ?>
         </ul>
-    </header>
+            </div>
 
     <div class="container-sign">  
     </div>
@@ -47,4 +50,5 @@ require_once('../controller/connexion.php');
     </div>
 
 </body>
+<?php require_once('../include/footer.php') ?>
 </html>
