@@ -37,8 +37,8 @@ var_dump($_SESSION);
 
     <div class="top-container">
         <ul>
-            <li><span>Devenir Membre ? <a href="./viewer/signup.php">Sign-Up</a></span></li>
-            <li><span>UpdateProfil <a href="./viewer/updateprofil.php">Profil</a></span></li>
+            <li><span>Devenir Membre ? <a href="./signup.php">Sign-Up</a></span></li>
+            <li><span>UpdateProfil <a href="./updateprofil.php">Profil</a></span></li>
         </ul>
     </div>
     
