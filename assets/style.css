@@ -247,14 +247,14 @@ footer{
     
 }
 
-li a{
+#menu-nav li a{
     text-decoration: none;
     font-size: 160%;
     color: #268Da9;
     font-weight: 800;
 }
 
-ul{
+#menu-nav{
     list-style: none;
 }
 
