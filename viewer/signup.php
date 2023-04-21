@@ -16,6 +16,7 @@ require_once('../controller/connexion.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LINK CSS -->
     <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/stylesign.css">
     <!-- LINK FONT -->
     <!-- LINK JS -->
     <!-- <script defer src="/scripts/connexion.js"></script> -->

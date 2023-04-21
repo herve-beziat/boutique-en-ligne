@@ -15,64 +15,77 @@ class Users {
         //empty
     }
 
-    function setId($id)
+    public function setId($id)
     {
         $this->id = $id;
     }
 
-    function getID()
+    public function getID()
     {
         return $this->id;
     }
 
-    function setLogin($login)
+    public function setLogin($login)
     {
         $this->login = $login;
     }
 
-    function getLogin()
+    public function getLogin()
     {
         return $this->login;
     }
 
-    function setEmail($email)
+    public function setEmail($email)
     {
         $this->email = $email;
     }
 
-    function getEmail()
+    public function getEmail()
     {
         return $this->email;
     }
 
-    function setPrenom($prenom)
+    public function setPrenom($prenom)
     {
         $this->prenom = $prenom;
     }
 
-    function getPrenom()
+    public function getPrenom()
     {
         return $this->prenom;
     }
 
-    function setNom($nom)
+    public function setNom($nom)
     {
         $this->nom = $nom;
     }
 
-    function getNom()
+    public function getNom()
     {
         return $this->nom;
     }
 
-    function setPassword($password)
+    public function setPassword($password)
     {
         $this->password = $password;
     }
 
-    function getPassword()
+    public function getPassword()
     {
         return $this->password;
+    }
+
+    public static function checkLoginExist($login){
+        require_once('../config/db.php');
+        global $bdd;
+
+        $query = $bdd->prepare('SELECT `login` FROM utilisateurs WHERE login = :login');
+        $query->bindParam(':login', $login, PDO::PARAM_STR, 255);
+        $query->execute();
+
+        return $query->rowCount();
+        
+
     }
 
     public static function register($login, $email, $nom, $prenom, $password)
@@ -144,8 +157,9 @@ class Users {
                 if(password_verify($password,$row['password'])){
                     session_start();
                     $_SESSION['login'] = $login;
-                    $_SESSION['email'] = $email;
-                    $_SESSION['nom'] = $nom;
+                    $_SESSION['email'] = $row['email'];
+                    $_SESSION['nom'] = $row['nom'];
+                    $_SESSION['prenom'] = $row['prenom'];
                     $_SESSION['id']=$row['id'];
                     $_SESSION['id_droit'] = $row['id_droit'];
                     return $mess_done;
@@ -161,6 +175,27 @@ class Users {
         }
     
 
+    }
+    public static function updateUser($id, $login, $email, $nom, $prenom, $password){
+
+        require_once('../config/db.php');
+        global $bdd;
+
+        $pass_hash = password_hash($password, PASSWORD_BCRYPT);
+        $request= $bdd->prepare("UPDATE utilisateurs SET login = :login, email = :email, nom = :nom, prenom = :prenom,  password= :password WHERE id = :id ");
+        $request->bindParam(':id', $id);
+        $request->bindParam(':login', $login, PDO::PARAM_STR, 255);
+        $request->bindParam(':email', $email, PDO::PARAM_STR, 255);
+        $request->bindParam(':nom', $nom, PDO::PARAM_STR, 255);
+        $request->bindParam(':prenom', $prenom, PDO::PARAM_STR, 255);
+        $request->bindParam(':password', $pass_hash, PDO::PARAM_STR, 255);
+        $request->execute();
+
+        $_SESSION['login'] = $login;
+        $_SESSION['email'] = $email;
+        $_SESSION['nom'] = $nom;
+        $_SESSION['prenom'] = $prenom;
+        $_SESSION['password'] = $login;
     }
 
     public static function logout()

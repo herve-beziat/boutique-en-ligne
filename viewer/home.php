@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once '../src/Users.php';
-var_dump($_SESSION);
+
 
 ?>
 

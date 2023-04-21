@@ -1,11 +1,11 @@
 <header>
     <div class="nav1">
-        <form id="searchbox">
+        <form method="POST" id="searchbox">
             <input type="text" name="recherche" placeholder="Rechercher">
             <input type="submit" name="submit" value="Ok">
         </form>
         <div id="Logo">
-            <img class="logo" src="../assets/img/logo.png">
+           <a href= "../index.php"> <img class="logo" src="../assets/img/logo.png"></a>
         </div>
         <div id="Profilpic">
             <img class="profilpic" src="../assets/img/profil.png">
