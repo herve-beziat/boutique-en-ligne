@@ -18,9 +18,9 @@ require_once('../controller/connexion.php');
     <link rel="stylesheet" href="../assets/style.css">
     <!-- LINK FONT -->
     <!-- LINK JS -->
-    <!-- <script defer src="/scripts/connexion.js"></script> -->
     <script defer src="../scripts/inscription.js"></script>
     <script defer src="../scripts/connexion.js"></script>
+    <script defer src="../scripts/signup.js"></script>
     <!-- <script defer src="./scripts/script.js"></script> -->
     <!-- LINK FAV ICON -->
     <!-- <link rel="icon" type="image/x-icon" sizes="32*32" href="/var/www/html/boutique-en-ligne/assets/img/logo.jpg"> -->
@@ -34,7 +34,7 @@ require_once('../controller/connexion.php');
         <ul>
             <?php if(empty($_SESSION['login'])) : ?>
                 <li><a href="../index.php"> &larr; RETOUR À L'ACCUEIL</a></li>
-                <li><a href="#" id="inscription">INSCRIPTION</a></li>
+                <!-- <li><a href="#" id="inscription">INSCRIPTION</a></li> -->
                 <li><a href="#" id="connexion">ESPACE MEMBRE</a></li>
             <?php else : ?>
                 <li><a href="../index.php"> &larr; RETOUR À L'ACCUEIL</a></li>
