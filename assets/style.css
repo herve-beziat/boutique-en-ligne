@@ -194,6 +194,7 @@ footer{
 }
 
 #Profilpic{
+    position: relative;
     display: flex;
     width:15%;
     height:200px;
@@ -258,3 +259,25 @@ footer{
     list-style: none;
 }
 
+/* CSS HEADER-INFOBULLE */
+#Profilpic .infobulle-profil{
+    position: absolute;
+    transform: translateX(-50%);
+    display: none;
+    opacity: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+#Profilpic:hover .infobulle-profil{
+    display: block;
+    opacity: 1;
+}
+
+.infobulle-profil a{
+    display: block;
+    margin-bottom: 10px;
+}
