@@ -94,7 +94,7 @@ body{
     margin-bottom: 5%;
 }  
 
-::placeholder{
+#form-connexion ::placeholder{
     color:white;
 
 }
@@ -204,7 +204,9 @@ button:focus{
     text-shadow: 2px 2px 4px rgba(0,0,0, .2);
     transition: all .3s;
     margin-bottom: 5%;
-}  ::placeholder{
+}  
+
+#form-subscribe ::placeholder{
     color:white;
 
 }

@@ -6,7 +6,7 @@
         </form>
         <div id="Logo">
            <a href= "../index.php"> <img class="logo" src="../assets/img/logo.png"></a>
-            <a href="../index.php"><img class="logo" src="../assets/img/logo.png"></a>
+           
         </div>
         <div id="Profilpic">
             <a href="#"><img class="profilpic" src="../assets/img/profil.png"></a>

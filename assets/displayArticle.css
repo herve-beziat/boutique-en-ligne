@@ -1,0 +1,97 @@
+body{
+    display: grid;
+}
+
+.container{
+    display:flex;
+    width:86%;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 5%;
+	justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-self:center;
+
+}
+
+#display_articles{
+
+    background: rgba(38,141,169, .3);
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255,255,255, .3);
+    border-top: 1px solid rgba(255,255,255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter:blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0, .2);
+    text-align: center;
+    margin:2%;
+
+}
+
+#display_articles img{
+	height: 50%;
+	width: 60%;
+	margin-top: 7%;
+}
+
+#display_articles button{
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255,255,255, .3);
+    border-top:1px solid rgba(255,255,255, .3) ;
+    padding: 1rem;
+    width: 80%;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter:blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0, .2);
+    color:white;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0,0,0, .2);
+    transition: all .3s;
+    margin-bottom: 5%;
+} 
+
+#display_articles h2{
+	color: #268Da9
+}
+
+.description{
+	color: #268Da9
+}
+
+.prix{
+	font-weight: bold;
+}
+
+
+#display_articles button:hover,
+button:focus
+button:focus{
+    background: rgba(255,255,255, .1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0, .2);
+}
+
+/* CSS Pagination */
+
+ .pagination{
+    display:flex;
+    justify-content:center;
+    
+}
+
+.pagination a{
+    text-decoration: none;
+    color:#268Da9; 
+}
+
+.page-item{
+    list-style: none;
+    margin:1%;
+    margin-bottom: 3%;
+}  
