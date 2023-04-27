@@ -1,4 +1,6 @@
 <?php
+        if (session_id() == '') session_start();
+        require_once('../config/db.php');
 
 class Article{
 
@@ -113,6 +115,8 @@ class Article{
         $request ->execute();
         $result = $request->fetchAll(PDO :: FETCH_ASSOC);
         return $result;
+        //echo json_encode($result) ;
+        //var_dump($result);
     }
 
 }
