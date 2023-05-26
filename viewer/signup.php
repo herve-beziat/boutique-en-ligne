@@ -23,7 +23,8 @@ require_once('../controller/connexion.php');
     <script defer src="../scripts/connexion.js"></script>
     <script defer src="../scripts/signup.js"></script>
     <!-- <script defer src="./scripts/script.js"></script> -->
-    <!-- LINK FAV ICON -->
+   <!-- LINK FAV ICON -->
+   <link rel="icon" type="image/x-icon" sizes="32*32" href="../assets/img/logo.png">
     <!-- <link rel="icon" type="image/x-icon" sizes="32*32" href="/var/www/html/boutique-en-ligne/assets/img/logo.jpg"> -->
     <!-- TITRE DU DOCUMENT -->
     <title>signup</title>

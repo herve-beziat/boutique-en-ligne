@@ -6,6 +6,7 @@
         </form>
         <div id="Logo">
            <a href= "../index.php"> <img class="logo" src="../assets/img/logo.png"></a>
+           
         </div>
         <div id="Profilpic">
             <a href="#"><img class="profilpic" src="../assets/img/profil.png"></a>
@@ -31,9 +32,10 @@
     </div>
     <div class="nav2">
         <ul id="menu-nav">
-           <li><a href="">Bonbons</a></li>
+           <li><a href="../viewer/displayArticles.php">Catalogue</a></li>
+           <li><a href="../viewer/bonbon.php">Bonbons</a></li>
            <li><a href="">Chocolat</a></li>
-           <li><a href="">Goodies</a></li>
+           <li><a href="../viewer/goodies.php">Goodies</a></li>
         </ul>
     </div>
 </header>

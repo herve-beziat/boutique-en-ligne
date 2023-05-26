@@ -1,0 +1,9 @@
+  <?php foreach($article as $value) : ?> 
+    <p id="mess_form"></p>
+    <div id ="display_articles">
+        <img src="../assets/img/<?= $value['photo'] ?>" alt="img">
+        <h2><?= $value['nom_article'] ?></h2>
+        <p><?= $value['prix'] ?>€</p>
+        <button type="submit" name ="addPanier" id="addPanier" >Ajouter au Panier</button>
+    </div>
+    <?php endforeach ?> 

@@ -20,7 +20,7 @@ require_once('../controller/update.php');
     <!-- LINK JS -->
    <script src = "../scripts/updateprofil.js" defer></script>
     <!-- LINK FAV ICON -->
-    <link rel="icon" type="image/x-icon" sizes="32*32" href="./assets/img/logo.jpg">
+    <link rel="icon" type="image/x-icon" sizes="32*32" href="../assets/img/logo.png">
     <!-- TITRE DU DOCUMENT -->
     <title>profilupdate</title>
 </head>
