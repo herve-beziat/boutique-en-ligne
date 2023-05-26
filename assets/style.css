@@ -281,3 +281,223 @@ footer{
     display: block;
     margin-bottom: 10px;
 }
+
+/* CSS INDEX */
+#top-image {
+    width: 100%;
+    height: 100%;
+    }
+
+#top-image img{
+    width: 100%;
+    height: 650px;
+}
+
+#logo-plans{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#logo-plans img{
+    width: 25%;
+}
+
+#images-promos {
+    background-color: #A4CFDB61;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin: 1% 0 2% 0;
+  }
+  
+  #images-promos a {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    margin: 2%; 
+  }
+  
+  #images-promos img {
+    max-width: 55%;
+    height: auto;
+  }
+
+  
+  
+
+/* #images-promos{
+    width: 100%;
+    background-color: #A4CFDB61;  
+    display: flex;
+    justify-content: space-evenly;
+    margin: 14px 10px 14px 10px;
+}
+
+#images-promos a{
+    width: 65%;
+    justify-self: center;
+    align-self: center;
+}
+#images-promos img{
+    margin: 4% 0 4% 0;
+    
+} */
+
+/* CSS PANEL ADMIN */
+  /* Style général de la page */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .container-left {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+
+  .container-left-top h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-left-bottom ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-left-bottom ul li {
+    margin-bottom: 10px;
+  }
+
+  .container-left-bottom ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .container-right {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .container-right-top h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Style du tableau des utilisateurs */
+  #container-admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tableUsers {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style de l'en-tête du tableau */
+  #tableUsers th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  /* Style des cellules du tableau */
+  #tableUsers td {
+    border: 1px solid #ddd;
+    padding: 12px;
+  }
+
+  /* Style des lignes alternées du tableau */
+  #tableUsers tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+
+/* Style du formulaire d'ajout d'article*/
+#formaddArticle {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  #formaddArticle h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #formaddArticle input[type="text"],
+  #formaddArticle input[type="number"],
+  #formaddArticle textarea,
+  #formaddArticle input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+
+  #formaddArticle textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  #formaddArticle button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  #formaddArticle button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  #formaddArticle #mess_form {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* Style du tableau des articles */
+#tableArticles {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style de l'en-tête du tableau des articles */
+#tableArticles th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Style des cellules du tableau des articles */
+#tableArticles td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+/* Style des lignes alternées du tableau des articles */
+#tableArticles tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

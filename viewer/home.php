@@ -28,19 +28,26 @@ require_once '../src/Users.php';
     
 
     <?php if(isset($_SESSION['login'])){
-        echo '<h1>Bienvenue ' .$_SESSION['login'] . '</h1>';
+        // echo '<h1>Bienvenue ' .$_SESSION['login'] . '</h1>';
     }
         else{
             echo "Pas connecté";
         }
     ?>
 
-    <div class="top-container">
-        <ul>
-            <li><span>Devenir Membre ? <a href="./signup.php">Sign-Up</a></span></li>
-            <li><span>UpdateProfil <a href="./updateprofil.php">Profil</a></span></li>
-        </ul>
+    <div id="top-image" >
+        <img src="../assets/img/shutterstock_282306719-1000x450.jpg">   
     </div>
+    
+    <div id="logo-plans">
+        <img src="../assets/img/nuage barbe.png">
+    </div>
+    
+    <div id="images-promos">
+        <a href="../viewer/displayArticles.php"><img src="../assets/img/bonbons-happy-life-700-grs-haribo.jpg"></a>
+        <a href="../viewer/displayArticles.php"><img src="../assets/img/bonbons-haribo-super-frites-boite-de-210-pieces-environ.jpg" href="../viewer/displayArticles.php"></a>
+    </div>
+    
     
     <?php require_once('../include/footer.php') ?>
     

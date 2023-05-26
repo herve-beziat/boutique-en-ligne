@@ -5,7 +5,7 @@ class Admin
     private ?int $id;
     private ?string $login;
     private ?int $id_droit;
-
+    
 
     public function __construct()
     {
@@ -43,21 +43,24 @@ class Admin
         return $this;
     }
 
-    Public function deleteArticle($id_article) {
+    Public function deleteArticle($id) {
         require_once('../config/db.php');
+        global $bdd;
         $mess_done = "Cet artice a bien été supprimé";
-        $req = $bdd->prepare('DELETE FROM article WHERE id_article = :id_article');
-        $req->bindParam(':id_article', $id_article);
+        $req = $bdd->prepare('DELETE FROM article WHERE id = :id');
+        $req->bindParam(':id', $id);
         $req->execute();
         return $mess_done;
     }
 
     Public static function displayUsers() {
         require_once('../config/db.php');
-        $req = $bdd->prepare('SELECT * FROM users');
+        global $bdd;
+        $req = $bdd->prepare("SELECT * FROM `utilisateurs`");
         $req->execute();
         $result = $req->fetchAll(PDO::FETCH_ASSOC);
         return $result;
+        var_dump($result);
     }
 
     Public static function updateArticle($stock,$prix,$id_article) {
@@ -71,11 +74,12 @@ class Admin
         return $mess_done;  
     }
 
-    Public static function deleteUser($id_user) {
+    Public static function deleteUser($id) {
         require_once('../config/db.php');
+        global $bdd;
         $mess_done = "Cet utilisateur a bien été supprimé";
-        $req = $bdd->prepare('DELETE FROM users WHERE id_user = :id_user');
-        $req->bindParam(':id_user', $id_user);
+        $req = $bdd->prepare("DELETE FROM `utilisateurs` WHERE id = :id");
+        $req->bindParam(':id', $id);
         $req->execute();
         return $mess_done;
     }
@@ -84,3 +88,8 @@ class Admin
 
 
 }
+
+// $disUsers =new Admin;
+// $disUsers->displayUsers();
+
+?>

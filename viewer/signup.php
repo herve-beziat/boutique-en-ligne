@@ -36,7 +36,7 @@ require_once('../controller/connexion.php');
             <?php if(empty($_SESSION['login'])) : ?>
                 <li><a href="../index.php"> &larr; RETOUR À L'ACCUEIL</a></li>
                 <!-- <li><a href="#" id="inscription">INSCRIPTION</a></li> -->
-                <li><a href="#" id="connexion">ESPACE MEMBRE</a></li>
+                <!-- <li><a href="#" id="connexion">ESPACE MEMBRE</a></li> -->
             <?php else : ?>
                 <li><a href="../index.php"> &larr; RETOUR À L'ACCUEIL</a></li>
                 <li><a href="../controller/logout.php" id="logout">Déconnexion</a></li>

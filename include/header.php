@@ -6,17 +6,20 @@
         </form>
         <div id="Logo">
            <a href= "../index.php"> <img class="logo" src="../assets/img/logo.png"></a>
-            <a href="../index.php"><img class="logo" src="../assets/img/logo.png"></a>
         </div>
         <div id="Profilpic">
             <a href="#"><img class="profilpic" src="../assets/img/profil.png"></a>
             <div class="infobulle-profil">
                 <?php if(empty($_SESSION['login'])) : ?>
-                    <a href="../viewer/signup.php?form=connexion">Se connecter</a>
-                    <a href="../viewer/inscription.php?form=inscription" id="inscription">Inscription</a>
+                    <a href="../viewer/signup.php?form=connexion" id="connexion">Se connecter</a>
+                    <a href="../viewer/signup.php?form=inscription" id="inscription">Inscription</a>
+                <?php elseif($_SESSION['login']=='admin') : ?>
+                    <h3>Bienvenue <?php echo $_SESSION['login']; ?></h3>
+                    <a href="../viewer/panelAdmin.php">Panel Admin</a>
+                    <a href="../controller/logout.php" id="logout">Déconnexion</a>
                 <?php else : ?>
                     <h3>Bienvenue <?php echo $_SESSION['login']; ?></h3>
-                    <a href="#">Mofifier le Profil</a>
+                    <a href="../viewer/updateprofil.php">Mofifier le Profil</a>
                     <a href="#">Mon compte</a>
                     <a href="../controller/logout.php" id="logout">Déconnexion</a>
                 <?php endif; ?>
