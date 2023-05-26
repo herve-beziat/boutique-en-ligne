@@ -9,7 +9,7 @@ $password ="";
 
 try {
     $bdd = new PDO($db, $host, $password);
-     echo "connexion réussie";
+    //  echo "connexion réussie";
 } catch (PDOException $e) {
     die('Erreur :' . $e->getMessage());
 }

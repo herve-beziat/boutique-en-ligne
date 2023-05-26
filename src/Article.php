@@ -95,7 +95,7 @@ class Article{
         require_once('../config/db.php');
         global $bdd;
 
-        $request= $bdd->prepare('INSERT INTO article(nom_article,prix,description,photo,stock,id_categorie) values(:nom_article,:prix,:description,:photo,:stock,:id_categorie)');
+        $request= $bdd->prepare('INSERT INTO article(nom_article, prix, description, photo, stock, id_categorie) VALUES (:nom_article, :prix, :description, :photo, :stock, :id_categorie)');
         $request->bindParam(':nom_article', $nom_article);
         $request->bindParam(':prix', $prix);
         $request->bindParam(':description', $description);
@@ -109,7 +109,7 @@ class Article{
         require_once('../config/db.php');
         global $bdd;
 
-        $request = $bdd->prepare('SELECT * FROM article');
+        $request = $bdd->prepare('SELECT * FROM `article`');
         $request ->execute();
         $result = $request->fetchAll(PDO :: FETCH_ASSOC);
         return $result;

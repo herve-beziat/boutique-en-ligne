@@ -12,7 +12,7 @@ if(isset($_POST['nom_article'])&& isset($_POST['prix'])&& isset($_POST['descript
     $stock=htmlspecialchars($_POST['stock']);
     $categorie=htmlspecialchars($_POST['categorie']);
 
-  $article -> addArticle($nom_article,$prix,$description,$photo,$stock,$categorie);
+  $article->addArticle($nom_article,$prix,$description,$photo,$stock,$categorie);
 
   return $mess_done;
 }
