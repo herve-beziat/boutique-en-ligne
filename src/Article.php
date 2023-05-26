@@ -108,19 +108,58 @@ class Article{
     }
 
     public static function displayArticle(){
+        
+
+         require_once('../config/db.php');
+         global $bdd;
+
+         $request = $bdd->prepare('SELECT * FROM `article`');
+         $request ->execute();
+         $result = $request->fetchAll(PDO :: FETCH_ASSOC);
+         return $result;
+        
+    }
+
+    public static function oneArticle(int $id) 
+    {
+        
+
         require_once('../config/db.php');
         global $bdd;
 
-        $request = $bdd->prepare('SELECT * FROM `article`');
+        $request = $bdd->prepare('SELECT * FROM `article` Where id = :id');
+        $request->bindParam(":id", $id);
         $request ->execute();
         $result = $request->fetchAll(PDO :: FETCH_ASSOC);
         return $result;
-        //echo json_encode($result) ;
-        //var_dump($result);
-    }
+   }
+   public static function displayBonbon(int $id) 
+   {
+       
+
+       require_once('../config/db.php');
+       global $bdd;
+
+       $request = $bdd->prepare('SELECT * FROM `article` Where id_categorie = :id');
+       $request->bindParam(":id", $id);
+       $request ->execute();
+       $result = $request->fetchAll(PDO :: FETCH_ASSOC);
+       return $result;
+  }
+
+  public static function displayGoodies(int $id)  {
+      
+
+      require_once('../config/db.php');
+      global $bdd;
+
+      $request = $bdd->prepare('SELECT * FROM `article` Where id_categorie = :id');
+      $request->bindParam(":id", $id);
+      $request ->execute();
+      $result = $request->fetchAll(PDO :: FETCH_ASSOC);
+      return $result;
+ }
 
 }
 
-//$article = new Article;
-//$article-> addArticle('Dragibus','12','bonbon','../assets/img/logo.png','10','Bonbon')
 ?>
