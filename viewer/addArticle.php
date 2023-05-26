@@ -3,6 +3,7 @@
         <h1>Ajouter un article</h1>
         <input type="text" name="nom_article" id="nom_article" placeholder="Nom de l'article">
         <input type="number" name="prix" id="prix" placeholder="prix">
+        <input type="text" name="sous_titre" id="sous_titre" placeholder="sous titre">
         <input type="text" name="description" id="description" placeholder="description">
         <input type="file" name="photo" id="photo" placeholder="Photo">
         <input type="number" name="stock" id="stock" placeholder="stock">
