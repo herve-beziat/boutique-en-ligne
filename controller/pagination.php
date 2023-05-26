@@ -18,13 +18,13 @@ $result = $request->fetch();
 
 $nbArticles = $result['nb_articles'];
 
-var_dump($nbArticles);
+
 // Détermine le nombre d'article par page 
 $parPage = 12;
 
 // Calcule le nombre de pages total
 $pages = ceil($nbArticles / $parPage); // ceil est une fonction qui  arrondis à l'entier supérieur 
-var_dump($pages);
+
 // Calcul du 1er article
 $premier = ($currentPage * $parPage) - $parPage;
 
@@ -34,4 +34,3 @@ $request->bindValue(':parpage', $parPage, PDO::PARAM_INT);
 $request->execute();
 $articles = $request->fetchAll(PDO::FETCH_ASSOC);
 
-var_dump($articles);
